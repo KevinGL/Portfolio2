@@ -76,13 +76,6 @@ const Portfolio = () => {
     <div className={`min-h-screen ${darkMode ? 'dark' : ''}`}>
       <div className="bg-gradient-to-br from-purple-100 via-pink-100 to-rose-100 dark:from-gray-900 dark:via-purple-900 dark:to-blue-900 min-h-screen transition-colors duration-300">
         <header className="py-12 text-center relative">
-          <button
-            onClick={toggleDarkMode}
-            className="absolute top-4 right-4 p-2 rounded-full bg-white dark:bg-gray-800 text-gray-800 dark:text-white shadow-lg hover:shadow-xl transition-shadow duration-300"
-            aria-label="Toggle dark mode"
-          >
-            {darkMode ? <Sun size={24} /> : <Moon size={24} />}
-          </button>
           <h1 className="text-5xl font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600 dark:from-purple-300 dark:to-pink-300">
             Développeur C/C++/3D/Web motivé et disponible
           </h1>
