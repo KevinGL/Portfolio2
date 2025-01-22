@@ -86,8 +86,8 @@ const Portfolio = () => {
     <div className={`min-h-screen ${darkMode ? 'dark' : ''}`}>
       <div className="bg-gradient-to-br from-purple-100 via-pink-100 to-rose-100 dark:from-gray-900 dark:via-purple-900 dark:to-blue-900 min-h-screen transition-colors duration-300">
         <header className="py-12 text-center relative">
-          <h1 className="text-2xl sm:text-3xl lg:text-5xl font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600 dark:from-purple-300 dark:to-pink-300 max-w-full break-words">
-            Développeur C/C++/PHP/Javascript/Typescript motivé et disponible
+          <h1 className="text-2xl sm:text-3xl lg:text-5xl font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600 dark:from-purple-300 dark:to-pink-300 max-w-full">
+            Développeur C/C++ PHP Javascript Typescript motivé et disponible
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             J'ai découvert la passion du code en 2011 et je ne m'en suis jamais lassé. À la base codeur en C j'ai rapidement réalisé des projets 3D OpenGL, évolué vers le C++ et effectué en 2022 une formation Epitech me permettant de réaliser des projets web
