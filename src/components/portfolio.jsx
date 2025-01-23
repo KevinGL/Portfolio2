@@ -53,16 +53,6 @@ const projects = [
     type: "web"
   },
   {
-    title: "Tower Defense",
-    description: "Projet réalisé lors de ma dernière mission Freelance, codé en Javascript",
-    image: "/img/Tower_defense.jpg",
-    link: "https://tower-defense-pink.vercel.app/",
-    titleSrc: "Source code",
-    titleLink: "Accès au jeu",
-    github: "https://github.com/KevinGL/Tower_defense",
-    type: "web"
-  },
-  {
     title: "Bones",
     description: "Projet réalisé lors de ma dernière mission Freelance, reprise d'un jeu Opensource",
     image: "/img/Bones.jpg",
@@ -89,7 +79,7 @@ const Portfolio = () => {
           <h1 className="text-2xl sm:text-3xl lg:text-5xl font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600 dark:from-purple-300 dark:to-pink-300 max-w-full">
             Développeur C/C++ PHP Javascript Typescript motivé et disponible
           </h1>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          <p className="text-md sm:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             J'ai découvert la passion du code en 2011 et je ne m'en suis jamais lassé. À la base codeur en C j'ai rapidement réalisé des projets 3D OpenGL, évolué vers le C++ et effectué en 2022 une formation Epitech me permettant de réaliser des projets web
           </p>
         </header>
