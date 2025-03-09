@@ -86,7 +86,7 @@ const Portfolio = () => {
             Mais mes compétences ne s'arrêtent pas là ! Depuis qqs années je réalise également des projets web, je connaissais déjà PHP, Javascript, Symfony et React.js mais une formation Epitech et des expériences en entreprise m'ont permis d'enrichir cela, et de découvrir d'autres langages et frameworks (Typescript, Laravel, Firebase, Next.js, Vue.js, Python ...).
           </p>
           <p className="text-md md:text-lg lg:text-xl text-gray-600 dark:text-gray-300 max-w-6xl mx-auto">
-            J'aime relever des challenges, ma passion intense pour le code font de moi une véritable machine que rien n'arrête !
+            J'aime relever des challenges, ma passion intense pour le code fait de moi une véritable machine que rien n'arrête !
           </p>
         </header>
         <main className="container mx-auto px-4 py-8">
