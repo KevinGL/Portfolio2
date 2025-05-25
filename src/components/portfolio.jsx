@@ -51,16 +51,6 @@ const projects = [
     titleLink: "View Project",
     github: "https://github.com/KevinGL/Job-and-go",
     type: "web"
-  },
-  {
-    title: "Bones",
-    description: "Projet réalisé lors de ma dernière mission Freelance, reprise d'un jeu Opensource",
-    image: "/img/Bones.jpg",
-    link: "https://alpha.playbones.xyz/",
-    titleSrc: "Source code",
-    titleLink: "Accès au jeu",
-    github: "",
-    type: "web"
   }
 ];
 
