@@ -13,6 +13,16 @@ const projects = [
     type: "web"
   },
   {
+    title: "StratoGL",
+    description: "Simulateur effets météo",
+    video: "/videos/StratoGL.mp4",
+    link: "",
+    titleSrc: "Mon moteur physique ferroviaire",
+    titleLink: "View Project",
+    github: "https://github.com/KevinGL/StratoGL",
+    type: "3d"
+  },
+  {
     title: "Ferro 1383",
     description: "Simulateur ferroviaire reproduisant une voie ferrée abandonnée, codé en C/C++ et utilisant OpenGL",
     video: "/videos/Ferro_1383.mp4",
@@ -73,7 +83,7 @@ const Portfolio = () => {
             J'ai découvert la passion du code en 2011 et je me suis alors lancé dans des projets C/C++, pour réaliser des petits jeux 3D en OpenGL.
           </p>
           <p className="text-md md:text-lg lg:text-xl text-gray-600 dark:text-gray-300 max-w-6xl mx-auto mb-4">
-            Mais mes compétences ne s'arrêtent pas là ! Depuis qqs années je réalise également des projets web, je connaissais déjà PHP, Javascript, Symfony et React.js mais une formation et des expériences en entreprise m'ont permis d'enrichir cela, et de découvrir d'autres langages et frameworks (Typescript, Laravel, Firebase, Next.js, Vue.js, Python ...).
+            Mais mes compétences ne s'arrêtent pas là ! Depuis qqs années je réalise également des projets web, je connaissais déjà PHP, Javascript, Symfony et React.js mais une formation Epitech et des expériences en entreprise m'ont permis d'enrichir cela, et de découvrir d'autres langages et frameworks (Typescript, Laravel, Firebase, Next.js, Vue.js, Python ...).
           </p>
           <p className="text-md md:text-lg lg:text-xl text-gray-600 dark:text-gray-300 max-w-6xl mx-auto">
             J'aime relever des challenges, ma passion intense pour le code fait de moi une véritable machine que rien n'arrête !
