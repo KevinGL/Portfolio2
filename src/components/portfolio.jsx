@@ -3,69 +3,60 @@ import { ExternalLink, Github, Moon, Sun } from "lucide-react"
 
 const projects = [
   {
-    title: "Visiomatch",
-    description: "Application de rencontre par speed dating vidéo en cours de développement, codé en Typescript, application Next.js",
-    image: "/img/visiomatch.jpg",
-    link: "https://visiomatch.vercel.app/",
+    title: "TaskFlow",
+    description: "Une application conçue pour la répartition des tâches entre travailleurs, les admins créent les tâches et les répartissent, et les utilisateurs traitent et valident les tâches au fur et à mesure",
+    image: "/img/TaskFlow.jpg",
+    link: "https://taskflow-om36.onrender.com",
     titleSrc: "Source code",
-    titleLink: "Version bêta",
-    github: "https://github.com/KevinGL/Visiomatch",
+    titleLink: "Démo ici",
+    github: "https://github.com/KevinGL/TaskFlow",
     type: "web"
   },
   {
-    title: "StratoGL",
-    description: "Simulateur effets météo",
-    video: "/videos/StratoGL.mp4",
-    link: "",
-    titleSrc: "Mon moteur physique ferroviaire",
-    titleLink: "View Project",
-    github: "https://github.com/KevinGL/StratoGL",
-    type: "3d"
-  },
-  {
-    title: "Ferro 1383",
-    description: "Simulateur ferroviaire reproduisant une voie ferrée abandonnée, codé en C/C++ et utilisant OpenGL",
-    video: "/videos/Ferro_1383.mp4",
-    link: "",
-    titleSrc: "Mon moteur physique ferroviaire",
-    titleLink: "View Project",
-    github: "https://github.com/KevinGL/Tchoutchou",
-    type: "3d"
-  },
-  {
-    title: "Geometry Dash AI",
-    description: "Copie simplfiée de Geometry Dash avec une IA jouant au jeu",
-    video: "/videos/Geometry_dash.mp4",
-    link: "",
+    title: "BlogSphere",
+    description: "Mini-blog, possibilité d'ajouter des articles, commenter, liker. Les admins peuvent modifier ou supprimer tous les articles et gérer les utilisateurs",
+    image: "/img/BlogSphere.jpg",
+    link: "https://blogsphere-rvmy.onrender.com/",
     titleSrc: "Source code",
-    titleLink: "View Project",
-    github: "https://github.com/KevinGL/Geometry-Dash-with-AI",
-    type: "ai"
-  },
-  {
-    title: "Transactor",
-    description: "Application de gestion des dépenses et revenus en temps réel, codé en Typescript avec Next.js et BDD Firebase",
-    image: "/img/Transactor.jpg",
-    link: "",
-    titleSrc: "Source code",
-    titleLink: "View Project",
-    github: "https://github.com/KevinGL/Transactor",
+    titleLink: "Démo ici",
+    github: "https://github.com/KevinGL/BlogSphere",
     type: "web"
   },
   {
-    title: "Job and Go",
-    description: "Gestionnaire de recherche d'emploi avec date de relance, codé en PHP avec Symfony et BDD MySQL",
-    image: "/img/Job_and_go.jpg",
-    link: "",
+    title: "Pollify",
+    description: "Site de sondages avec statistiques et graphes, un utilisateur peut modifier ses propres sondages uniquement si celui-ci n'a pas encore démarré, les admins peuvent modifier tous les sondages, gérer les utilisateurs et en promouvoir admin",
+    image: "/img/Pollify.jpg",
+    link: "https://pollify-yya8.onrender.com",
     titleSrc: "Source code",
-    titleLink: "View Project",
-    github: "https://github.com/KevinGL/Job-and-go",
+    titleLink: "Démo ici",
+    github: "https://github.com/KevinGL/Pollify",
+    type: "web"
+  },
+  {
+    title: "Gradebook",
+    description: "Gestionnaire de résultats scolaires, trois type d'utilisateurs : Enseignant, élève et admin. Les enseignants peuvent ajouter ou modifier notes et appréciations par trimestre, les élèves peuvent visualiser notes et moyennes, les admins peuvent changer les classes des élèves et les matières des enseignants, ajouter / supprimer élève ou enseignant. Il n'y a pas d'inscription afin d'éviter qu'un élève s'inscrive en tant qu'enseignant et ait accès à des données sensibles",
+    image: "/img/Gradebook.jpg",
+    link: "https://gradebook-hlvs.onrender.com",
+    titleSrc: "Source code",
+    titleLink: "Démo ici",
+    github: "https://github.com/KevinGL/Gradebook",
+    type: "web"
+  },
+  {
+    title: "ShopLite",
+    description: "Mini-site e-commerce, affichage des produits par catégorie et recherche par mots-clés, possibilité d'ajouter des produits au panier, de passer des commandes avec adresse de livraison, de visualiser ses commandes passées. Les admins peuvent gérer manuellement produits, catégories et commandes",
+    image: "/img/ShopLite.jpg",
+    link: "https://shoplite-ipc3.onrender.com",
+    titleSrc: "Source code",
+    titleLink: "Démo ici",
+    github: "https://github.com/KevinGL/ShopLite",
     type: "web"
   }
 ];
 
 const Portfolio = () => {
   const [darkMode, setDarkMode] = useState(false);
+  const [modalMedia, setModalMedia] = useState(null);
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
@@ -77,16 +68,16 @@ const Portfolio = () => {
       <div className="bg-gradient-to-br from-purple-100 via-pink-100 to-rose-100 dark:from-gray-900 dark:via-purple-900 dark:to-blue-900 min-h-screen transition-colors duration-300">
         <header className="py-12 text-center relative">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600 dark:from-purple-300 dark:to-pink-300 max-w-full mb-8">
-            Développeur C/C++ PHP Javascript Typescript motivé et disponible
+            Développeur PHP / Symfony
           </h1>
           <p className="text-md md:text-lg lg:text-xl text-gray-600 dark:text-gray-300 max-w-6xl mx-auto mb-4">
-            J'ai découvert la passion du code en 2011 et je me suis alors lancé dans des projets C/C++, pour réaliser des petits jeux 3D en OpenGL.
+            Je suis développeur spécialisé en backend et particulièrement en Symfony, une technologie qui m'a séduit dès mes premières expérimentations.
           </p>
           <p className="text-md md:text-lg lg:text-xl text-gray-600 dark:text-gray-300 max-w-6xl mx-auto mb-4">
-            Mais mes compétences ne s'arrêtent pas là ! Depuis qqs années je réalise également des projets web, je connaissais déjà PHP, Javascript, Symfony et React.js mais une formation Epitech et des expériences en entreprise m'ont permis d'enrichir cela, et de découvrir d'autres langages et frameworks (Typescript, Laravel, Firebase, Next.js, Vue.js, Python ...).
+            J'aime le backend car c'est le cœur d'une application web, là où se joue toute la logique métier et les échanges de données. Symfony rend ce travail à la fois puissant et élégant : Des classes pour représenter les tables en BDD, des contrôleurs pour jongler entre BDD et vues, un moteur de templates pour construire les pages web, un CLI pour générer du code, une authentification simple et sécurisée ...
           </p>
           <p className="text-md md:text-lg lg:text-xl text-gray-600 dark:text-gray-300 max-w-6xl mx-auto">
-            J'aime relever des challenges, ma passion intense pour le code fait de moi une véritable machine que rien n'arrête !
+            Pour profiter au mieux de toutes ces fonctionnalités j'ai créé plusieurs projets Symfony, que je vous invite à découvrir avec le compte démo (login : Recruteur / mot de passe : recruteur)
           </p>
         </header>
         <main className="container mx-auto px-4 py-8">
@@ -96,7 +87,7 @@ const Portfolio = () => {
                 <div className="p-6">
                   <h2 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-white">{project.title}</h2>
                   <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
-                  <div className="mb-4 relative group">
+                  <div className="mb-4 relative group cursor-pointer" onClick={() => setModalMedia(project.image || project.video)}>
                     {project.image ? (
                       <img
                         src={project.image}
@@ -153,6 +144,30 @@ const Portfolio = () => {
           </div>
         </main>
       </div>
+
+      {modalMedia && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
+          onClick={() => setModalMedia(null)}
+        >
+          <div className="max-w-7xl max-h-[90vh]">
+            {modalMedia.endsWith('.mp4') ? (
+              <video
+                src={modalMedia}
+                controls
+                autoPlay
+                className="max-h-[90vh] rounded-lg shadow-lg"
+              />
+            ) : (
+              <img
+                src={modalMedia}
+                alt="preview"
+                className="max-h-[90vh] rounded-lg shadow-lg"
+              />
+            )}
+          </div>
+        </div>
+      )}
     </div>
   );
 };
