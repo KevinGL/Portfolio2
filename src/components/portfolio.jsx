@@ -6,6 +6,7 @@ const projects = [
     title: "TaskFlow",
     description: "Une application conçue pour la répartition des tâches entre travailleurs, les admins créent les tâches et les répartissent, et les utilisateurs traitent et valident les tâches au fur et à mesure",
     image: "/img/TaskFlow.jpg",
+    image_mobile: "/img/TaskFlow_mobile.jpg",
     link: "https://taskflow-om36.onrender.com",
     titleSrc: "Source code",
     titleLink: "Démo ici",
@@ -16,6 +17,7 @@ const projects = [
     title: "BlogSphere",
     description: "Mini-blog, possibilité d'ajouter des articles, commenter, liker. Les admins peuvent modifier ou supprimer tous les articles et gérer les utilisateurs",
     image: "/img/BlogSphere.jpg",
+    image_mobile: "/img/BlogSphere_mobile.jpg",
     link: "https://blogsphere-rvmy.onrender.com/",
     titleSrc: "Source code",
     titleLink: "Démo ici",
@@ -26,6 +28,7 @@ const projects = [
     title: "Pollify",
     description: "Site de sondages avec statistiques et graphes, un utilisateur peut modifier ses propres sondages uniquement si celui-ci n'a pas encore démarré, les admins peuvent modifier tous les sondages, gérer les utilisateurs et en promouvoir admin",
     image: "/img/Pollify.jpg",
+    image_mobile: "/img/Pollify_mobile.jpg",
     link: "https://pollify-yya8.onrender.com",
     titleSrc: "Source code",
     titleLink: "Démo ici",
@@ -36,6 +39,7 @@ const projects = [
     title: "Gradebook",
     description: "Gestionnaire de résultats scolaires, trois type d'utilisateurs : Enseignant, élève et admin. Les enseignants peuvent ajouter ou modifier notes et appréciations par trimestre, les élèves peuvent visualiser notes et moyennes, les admins peuvent changer les classes des élèves et les matières des enseignants, ajouter / supprimer élève ou enseignant. Il n'y a pas d'inscription afin d'éviter qu'un élève s'inscrive en tant qu'enseignant et ait accès à des données sensibles",
     image: "/img/Gradebook.jpg",
+    image_mobile: "/img/Gradebook_mobile.jpg",
     link: "https://gradebook-hlvs.onrender.com",
     titleSrc: "Source code",
     titleLink: "Démo ici",
@@ -46,6 +50,7 @@ const projects = [
     title: "ShopLite",
     description: "Mini-site e-commerce, affichage des produits par catégorie et recherche par mots-clés, possibilité d'ajouter des produits au panier, de passer des commandes avec adresse de livraison, de visualiser ses commandes passées. Les admins peuvent gérer manuellement produits, catégories et commandes",
     image: "/img/ShopLite.jpg",
+    image_mobile: "/img/ShopLite_mobile.jpg",
     link: "https://shoplite-ipc3.onrender.com",
     titleSrc: "Source code",
     titleLink: "Démo ici",
@@ -87,13 +92,16 @@ const Portfolio = () => {
                 <div className="p-6">
                   <h2 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-white">{project.title}</h2>
                   <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
-                  <div className="mb-4 relative group cursor-pointer" onClick={() => setModalMedia(project.image || project.video)}>
+                  <div className="mb-4 relative group cursor-pointer" onClick={() => setModalMedia({desktop: project.image, mobile: project.image_mobile})}>
                     {project.image ? (
-                      <img
-                        src={project.image}
-                        alt={project.title}
-                        className="w-full h-48 object-cover rounded-md"
-                      />
+                      <picture>
+                        <source srcSet={project.image_mobile} media="(max-width: 640px)" />
+                        <img
+                          src={project.image}
+                          alt={project.title}
+                          className="w-full h-48 object-cover rounded-md"
+                        />
+                      </picture>
                     ) : (
                       <video
                         src={project.video}
@@ -151,20 +159,14 @@ const Portfolio = () => {
           onClick={() => setModalMedia(null)}
         >
           <div className="max-w-7xl max-h-[90vh]">
-            {modalMedia.endsWith('.mp4') ? (
-              <video
-                src={modalMedia}
-                controls
-                autoPlay
-                className="max-h-[90vh] rounded-lg shadow-lg"
-              />
-            ) : (
+            <picture>
+              <source srcSet={modalMedia.mobile} media="(max-width: 640px)" />
               <img
-                src={modalMedia}
+                src={modalMedia.desktop}
                 alt="preview"
                 className="max-h-[90vh] rounded-lg shadow-lg"
               />
-            )}
+            </picture>
           </div>
         </div>
       )}
