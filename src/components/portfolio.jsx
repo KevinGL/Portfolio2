@@ -94,14 +94,11 @@ const Portfolio = () => {
                   <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
                   <div className="mb-4 relative group cursor-pointer" onClick={() => setModalMedia({desktop: project.image, mobile: project.image_mobile})}>
                     {project.image ? (
-                      <picture>
-                        <source srcSet={project.image_mobile} media="(max-width: 640px)" />
-                        <img
+                      <img
                           src={project.image}
                           alt={project.title}
                           className="w-full h-48 object-cover rounded-md"
                         />
-                      </picture>
                     ) : (
                       <video
                         src={project.video}
@@ -158,7 +155,7 @@ const Portfolio = () => {
           className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
           onClick={() => setModalMedia(null)}
         >
-          <div className="max-w-7xl max-h-[90vh]">
+          <div className="w-full max-w-sm sm:max-w-md md:max-w-2xl lg:max-w-5xl xl:max-w-7xl max-h-[90vh]">
             <picture>
               <source srcSet={modalMedia.mobile} media="(max-width: 640px)" />
               <img
