@@ -38,9 +38,9 @@ export const Projects = () =>
     return (
         <>
             <div className="py-12 text-center">
-                <h1 className="inline-block text-5xl sm:text-6xl font-extrabold mb-4 bg-gradient-to-r from-cyan-200 to-violet-700 bg-clip-text text-transparent mx-auto">
-                  Projets
-                </h1>
+                <h2 className="inline-block text-5xl sm:text-6xl font-extrabold mb-4 bg-gradient-to-r from-cyan-200 to-violet-700 bg-clip-text text-transparent mx-auto">
+                  Projets réalisés
+                </h2>
             </div>
 
             <div className="flex flex-col md:flex-row md:flex-wrap justify-around">
