@@ -93,7 +93,7 @@ const Portfolio = () =>
               </h1>
             </div>
 
-            <img src="img/20230829_132432.jpg" alt="" className="w-4/5 sm:w-1/4 h-min mx-auto rounded-full mb-20 shadow-[0_0_40px_rgba(255,0,255,0.75)]" />
+            <img src="img/20230829_132432.jpg" alt="" className="w-4/5 sm:w-1/4 mx-auto rounded-full mb-20 shadow-[0_0_40px_rgba(255,0,255,0.75)]" />
 
             {/*<div className="flex justify-around w-full sm:w-1/2 mx-auto">
               <button className="text-cyan-200 text-lg sm:text-2xl font-bold bg-black px-4 py-2 rounded-xl border border-violet-700 border-4 hover:scale-110 transition duration-200" onClick={() => setPage("Projects")}>Voir les projets</button>
