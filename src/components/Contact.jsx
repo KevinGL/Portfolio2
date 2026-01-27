@@ -11,7 +11,7 @@ export const Contacts = () =>
         <>
             <div className="py-12 text-center">
                 <h2 className="inline-block text-5xl sm:text-6xl font-extrabold mb-16 bg-gradient-to-r from-cyan-200 to-violet-700 bg-clip-text text-transparent mx-auto">
-                  Me contacter
+                  Me contacter directement
                 </h2>
 
                 <div className="flex flex-col justify-around sm:w-1/2 sm:mx-auto">

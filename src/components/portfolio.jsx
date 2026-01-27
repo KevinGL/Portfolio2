@@ -5,6 +5,8 @@ import { NextJS } from './Next.js';
 import { OpenGL } from './OpenGL.jsx';
 import { Skills } from './Skills.jsx';
 import { Contacts } from './Contact.jsx';
+import Presentation from './Presentation.jsx';
+import { Link } from 'react-router-dom';
 
 const Portfolio = () =>
 {
@@ -83,17 +85,18 @@ const Portfolio = () =>
           <>
             <div className="py-6 sm:py-12 text-center">
               <h1 className="inline-block text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-4 bg-gradient-to-r from-cyan-200 to-violet-700 bg-clip-text text-transparent mx-auto">
-                Développeur PHP / Next.js / 3D
-              </h1>
-            </div>
-
-            <div className="py-6 sm:py-12 text-center">
-              <h1 className="inline-block text-xl sm:text-2xl lg:text-3xl font-extrabold mb-4 bg-gradient-to-r from-cyan-200 to-violet-700 bg-clip-text text-transparent mx-auto">
-                Applications web métiers et SaaS, messageries instantanées, e-commerce, social, blogs, sondages, simulations 3D
+                {/*Développeur PHP / Next.js / 3D*/}
+                Concepteur d'applications interactives (Web et 3D)
               </h1>
             </div>
 
             <img src="img/20230829_132432.jpg" alt="" className="w-4/5 sm:w-1/4 mx-auto rounded-full mb-20 shadow-[0_0_40px_rgba(255,0,255,0.75)]" />
+
+            <Presentation />
+
+            <div className="inline-block text-xl sm:text-2xl lg:text-3xl font-extrabold mb-4 bg-gradient-to-r from-cyan-200 to-violet-700 bg-clip-text text-transparent mx-auto">
+              Vous avez un projet ou une idée ? <Link to="/contact" className="block md:inline text-cyan-200 text-lg sm:text-2xl font-bold bg-black px-4 py-2 rounded-xl border border-violet-700 border-4 hover:scale-110 transition duration-200">Discutons-en</Link>
+            </div>
 
             {/*<div className="flex justify-around w-full sm:w-1/2 mx-auto">
               <button className="text-cyan-200 text-lg sm:text-2xl font-bold bg-black px-4 py-2 rounded-xl border border-violet-700 border-4 hover:scale-110 transition duration-200" onClick={() => setPage("Projects")}>Voir les projets</button>
