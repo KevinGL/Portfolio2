@@ -1,6 +1,6 @@
 
 
-export default Presentation = () =>
+const Presentation = () =>
 {
     const cards =
     [
@@ -114,3 +114,5 @@ export default Presentation = () =>
         </div>
     )
 }
+
+export default Presentation;

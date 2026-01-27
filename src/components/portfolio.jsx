@@ -1,8 +1,5 @@
-import React, { useState } from 'react';
-import { ExternalLink, Github, Moon, Sun, Menu, X } from "lucide-react";
+import { useState } from 'react';
 import { Projects } from './Projets.jsx';
-import { NextJS } from './Next.js';
-import { OpenGL } from './OpenGL.jsx';
 import { Skills } from './Skills.jsx';
 import { Contacts } from './Contact.jsx';
 import Presentation from './Presentation.jsx';
@@ -11,8 +8,6 @@ import { Link } from 'react-router-dom';
 const Portfolio = () =>
 {
   const [page, setPage] = useState("Home");
-  const [darkMode, setDarkMode] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
 
   const pages = ["Home", "Projects", "Contacts"];
   

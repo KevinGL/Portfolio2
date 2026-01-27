@@ -66,7 +66,7 @@ export const NextJS = () =>
                         </div>
                         <div className="flex justify-between">
                             {
-                            project.link != "" &&
+                            project.link !== "" &&
                             
                             <a
                                 href={project.link}
@@ -79,7 +79,7 @@ export const NextJS = () =>
                             </a>
                             }
                             {
-                            project.github != "" &&
+                            project.github !== "" &&
                             
                             <a
                                 href={project.github}

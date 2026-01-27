@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { ExternalLink, Github, Moon, Sun } from "lucide-react"
 
 const projects = [
@@ -64,7 +64,7 @@ export const OpenGL = () =>
                         </div>
                         <div className="flex justify-between">
                             {
-                            project.link != "" &&
+                            project.link !== "" &&
                             
                             <a
                                 href={project.link}
@@ -77,7 +77,7 @@ export const OpenGL = () =>
                             </a>
                             }
                             {
-                            project.github != "" &&
+                            project.github !== "" &&
                             
                             <a
                                 href={project.github}
